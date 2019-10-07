@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        *{
+               margin: 0px;
+            padding:0px;
+        }
+          body
+        {
+            height: 50%;
+            width: 50%;
+            background-image: url(images/home.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            height: 100%;
+/*            overflow: hidden;*/
+            animation: animate 50s infinite;
+
+        }
+        .list
+        {
+/*            background-color:black;*/
+            text-align:center;
+            box-sizing: border-box;
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            z-index: -2;
+
+        }
+        .list ul
+        {
+            list-style:none;
+            display:inline-flex;
+            float: right;
+            position:absolute;
+        }
+        .list ul li
+        {
+            width: 125px;
+            padding:15px;
+            margin:15px;
+            color:orange;
+            display: inline;
+
+        }
+        .list ul li a
+        {
+            text-decoration:underline;
+            color:darkred;
+            position:absolute;
+            font-size: 25px ;
+
+        }
+        .logo{
+            height: 0px;
+            width: 25%;
+            padding-bottom: 0px;
+            animation: text 1s linear infinite;
+            float: left;
+
+
+
+        }
+        @keyframes text{
+            0% {
+                color: antiquewhite
+            }
+            25%{
+                color: darkkhaki;
+            }
+             50%
+            {
+                color: burlywood;
+            }
+
+            75%
+            {
+                color: chocolate;
+            }
+
+            100%
+            {
+                color: goldenrod;
+            }
+        }
+        @keyframes animate{
+            0% {
+                background-image: url(/images/home.jpg);
+            }
+
+
+             50%
+            {
+                background-image: url(/images/front.jpg);
+            }
+
+
+
+            100%
+            {
+            background-image: url(/images/study.jpg);
+            }
+
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+ <div class="logo" style="color:goldenrod;
+            font-family: cursive;
+            text-align-last: left;width: 25%;height:105px;padding:5px;font-size: 50px;z-index: 2;">Interiorismo</div>
+
+  <div class="list">
+   <ul>
+       <li><a href="">HOME</a></li>
+       <li><a href="">CATEGORIES</a></li>
+       <li><a href="">CONTACT</a></li>
+       <li><a href="">ABOUT US</a></li>
+   </ul>
+    </div>
+</body>
+</html>
